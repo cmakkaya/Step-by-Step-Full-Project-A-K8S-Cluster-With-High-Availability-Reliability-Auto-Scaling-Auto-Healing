@@ -16,7 +16,7 @@
 
 1.1.2. Creating VPC for Amazon Elastic Kubernetes Service (EKS) by Using Terraform
 
-[1.2. Deploying a Kubernetes cluster in AWS using EKS (Elastic Kubernetes Service) in the private subnet.](#12-deploy-a-kubernetes-cluster-in-aws-using-eks-elastic-kubernetes-service-in-the-private-subnet)
+[1.2. Deploying a Kubernetes cluster in AWS using EKS (Elastic Kubernetes Service) in the private subnet.](#12-deploying-a-kubernetes-cluster-in-aws-using-eks-elastic-kubernetes-service-in-the-private-subnet)
 
 1.2.1. Firstly, create a role for Amazon EKS
 
