@@ -74,7 +74,7 @@
 ## 2- GitOps Workflow:
 Implementing a GitOps workflow using ArgoCD for managing the deployment of applications in the Kubernetes cluster.
 
-[2.1. Creating ArgoCD](#21-creating-argocd)
+[2.1. Creating ArgoCD](#2--gitops-workflow-1)
 
 2.2. TLS Certificate for ArgoCD via AWS Certificate Manager (ACM) 
 
@@ -282,7 +282,9 @@ For a more detailed explanation, you can review my article in the link, [Working
 
 
 ## 2- GitOps Workflow:
-
+* For a more detailed explanation, you can review my article in the link, [Argo CD-1: Understanding, Installing, and Using Argo CD as a GitOps Continuous Delivery Tool](https://cmakkaya.medium.com/argo-cd-1-understanding-installing-and-using-argo-cd-as-a-gitops-continuous-delivery-tool-0ec0b4e00a77)
+and
+[Argo CD and GitHub Action-1: Running Together Them To Create The CI/CD Pipeline](https://medium.com/@cmakkaya/argo-cd-and-github-action-1-running-together-them-to-create-the-ci-cd-pipeline-6baeed39dde7)
 ### Implement a GitOps workflow using ArgoCD for managing the deployment of applications in the Kubernetes cluster.
 
 ## 2.1. Creating ArgoCD  
