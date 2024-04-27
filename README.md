@@ -1,0 +1,2 @@
+# Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing
+Step by Step Full Project : Creating A Kubernetes Cluster With High Availability, Reliability, Auto Scaling, and Auto-Healing On The AWS EKS via Terrafom Or Cloudformation, And By Using GitOps Workflow(ArgoCD), Jenkins, RDS MySQL Database, AWS Secrets Manager, Amazon Route53, AWS Certificate Manager, CloudWatch, Prometheus and Grafana.
