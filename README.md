@@ -6,7 +6,7 @@
 
 ### ⭐ Also, thank you for giving `stars` to my GitHub repository.
 
-## Index of Steps
+# Index of Steps
 ![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/6d3b1ca5-175c-4a09-9b28-0b7328e0601a)
 
 ### If you liked the article, I would be happy if you click on the [Medium Following](https://cmakkaya.medium.com/) button to encourage me to write and not miss future articles.
