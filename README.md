@@ -188,6 +188,7 @@ terraform apply -auto-approve
 ## 1.2. Deploying a Kubernetes cluster in AWS using EKS (Elastic Kubernetes Service) in the private subnet.
 
 ### 1.2.1. Firstly, create a role for Amazon EKS:
+For a more detailed explanation, you can review [this documantation's link,](https://docs.aws.amazon.com/eks/latest/userguide/service_IAM_role.html)
 ![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/e5e4c54d-642e-43a9-87d8-868117a13e1d)
 ![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/3bec6f75-e758-42d8-9001-59b718581698)
 
