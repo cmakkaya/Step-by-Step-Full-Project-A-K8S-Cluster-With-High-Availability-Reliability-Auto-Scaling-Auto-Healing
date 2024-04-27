@@ -1,24 +1,9 @@
+## Hi there, <img src = "https://github.com/cmakkaya/cmakkaya/blob/main/wavehand.gif" width = "40" align="center"> Nice to see you. <img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="40"/>
+
 # Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing
 
 ## Step by Step Full Project : Creating A Kubernetes Cluster With High Availability, Reliability, Auto Scaling, and Auto-Healing On The AWS EKS via Terrafom Or Cloudformation, And By Using GitOps Workflow(ArgoCD), Jenkins, RDS MySQL Database, AWS Secrets Manager, Amazon Route53, AWS Certificate Manager, CloudWatch, Prometheus and Grafana.
 
-## Hi there, <img src = "https://github.com/cmakkaya/cmakkaya/blob/main/wavehand.gif" width = "40" align="center"> Nice to see you. <img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="40"/>
-## I'm Cumhur Mesut AKKAYA 👋 
-<p>
-  <a href="https://github.com/cmakkaya?tab=repositories"><img src="https://readme-typing-svg.herokuapp.com?&font=IBM+Plex+Sans&color=f80321&size=27&lines=Welcome+to+Task+Page;I'm+a+Cloud+/+DevOps+Engineer,;" /></a>
-</p>
-<p>
-<!--
-
-![](https://komarev.com/ghpvc/?username=cmakkaya)
-
-<img src="https://github-readme-stats.vercel.app/api?username=cmakkaya&theme=chartreuse-dark" alt="my github stats" width="49%"/>
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=cmakkaya&theme=chartreuse-dark" alt="my commit status" width="49%" />
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=cmakkaya&theme=chartreuse-dark&layout=compact" alt="languages" width="50%">
--->
-</p>
 
 ## Index of Solution Steps
 ![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/6d3b1ca5-175c-4a09-9b28-0b7328e0601a)
