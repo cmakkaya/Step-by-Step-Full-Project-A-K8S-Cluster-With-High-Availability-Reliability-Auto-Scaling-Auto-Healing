@@ -175,7 +175,7 @@ Setting up alerts for critical events or performance thresholds.
 ![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/905ec25a-9647-40ea-9a95-28336345fb39)
 
 ### 1.1.2. Creating VPC for Amazon Elastic Kubernetes Service (EKS) by Using Terraform
-* The terraform-vpc installation .tf files are available in the GitHub repo.
+* The terraform-vpc installation `.tf files` are available in the GitHub repo.
 * For a more detailed explanation, you can review [this documantation's link.](https://developer.hashicorp.com/terraform/tutorials/aws-get-started) 
 ![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/71d47c29-5dec-44bd-8f18-9cf4943e2c7d)
 ####  Goto "terraform-vpc" folder and running following commands
