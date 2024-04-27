@@ -63,7 +63,7 @@
 
 1.4.2. DNS name
 
-1.4.3. Running Deployment, Services, and İngress
+1.4.3. Running Deployment, Services, and Ingress
 
 1.4.4. Controlling Microservices application via The Internet Browser
 
@@ -275,7 +275,7 @@ For a more detailed explanation, you can review my article in the link, [Working
 For a more detailed explanation, you can review my article in the link, [Working with Microservices-9: Preparing the staging pipeline in Jenkins, and deploying the microservices app to the Kubernetes cluster using Rancher, Helm, Maven, Amazon ECR, and Amazon S3. Part-2](https://cmakkaya.medium.com/working-with-microservices-9-preparing-the-staging-pipeline-in-jenkins-and-deploying-the-270f4770a723)
 ### 1.4.2. DNS name
 ![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/8219e9e5-7665-4878-a89a-2a6a4cebaea4)
-### 1.4.3. Running Deployment, Services, and İngress
+### 1.4.3. Running Deployment, Services, and Ingress
 ![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/896a5f93-515f-45e9-8e77-cae78ab60fd3)
 ### 1.4.4. Controlling Microservices application via The Internet Browser
 ![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/8126259d-790f-4050-94ec-f888514e084b)
