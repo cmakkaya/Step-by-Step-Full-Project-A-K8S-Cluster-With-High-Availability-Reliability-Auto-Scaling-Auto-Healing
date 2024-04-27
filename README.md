@@ -192,6 +192,7 @@ terraform apply -auto-approve
 ![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/3bec6f75-e758-42d8-9001-59b718581698)
 
 ### 1.2.2. Creating a Kubernetes cluster in Amazon EKS via eksctl
+#### Use `cumhur-cluster.yaml` file in this repository.
 ![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/2fde3799-3d43-4265-897a-eac27e0c10df)
 ![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/c0f5c786-62f1-4194-93cc-3a40fd14d5dd)
 ![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/1d17fec9-9d89-4a23-ae68-bea0ce41ac64)
