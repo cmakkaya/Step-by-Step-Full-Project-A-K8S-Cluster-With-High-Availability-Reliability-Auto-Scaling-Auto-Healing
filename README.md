@@ -169,12 +169,14 @@ Setting up alerts for critical events or performance thresholds.
 
 ### 1.1.1. Creating VPC for Amazon Elastic Kubernetes Service (EKS) by Using Cloudformation:
 * The yaml installation file for Cloudformation is available in the GitHub repo.
+* For a more detailed explanation, you can review [this documantation's link.](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/GettingStarted.html) 
 ![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/bb12685f-ac5c-418d-ae9b-f042dc8b2dd3)
 ![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/91241539-3c1c-43e4-a2a0-beb53e4f7437)
 ![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/905ec25a-9647-40ea-9a95-28336345fb39)
 
 ### 1.1.2. Creating VPC for Amazon Elastic Kubernetes Service (EKS) by Using Terraform
 * The terraform-vpc installation .tf files are available in the GitHub repo.
+* For a more detailed explanation, you can review [this documantation's link.](https://developer.hashicorp.com/terraform/tutorials/aws-get-started) 
 ![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/71d47c29-5dec-44bd-8f18-9cf4943e2c7d)
 ####  Goto "terraform-vpc" folder and running following commands
 ```bash
@@ -188,7 +190,8 @@ terraform apply -auto-approve
 ## 1.2. Deploying a Kubernetes cluster in AWS using EKS (Elastic Kubernetes Service) in the private subnet.
 
 ### 1.2.1. Firstly, create a role for Amazon EKS:
-For a more detailed explanation, you can review [this documantation's link,](https://docs.aws.amazon.com/eks/latest/userguide/service_IAM_role.html)
+* Kubernetes clusters managed by Amazon EKS use this role to manage nodes and the legacy Cloud Provider uses this role to create load balancers with Elastic Load Balancing for services. Before you can create Amazon EKS clusters, you must create an IAM role with either of the following IAM policies.
+* For a more detailed explanation, you can review [this documantation's link.](https://docs.aws.amazon.com/eks/latest/userguide/service_IAM_role.html)
 ![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/e5e4c54d-642e-43a9-87d8-868117a13e1d)
 ![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/3bec6f75-e758-42d8-9001-59b718581698)
 
