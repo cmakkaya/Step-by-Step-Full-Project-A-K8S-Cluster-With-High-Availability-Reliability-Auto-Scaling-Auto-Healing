@@ -10,13 +10,13 @@
 
 ## 1- Kubernetes Deployment:
 
-[1.1. Create a VPC in AWS with both public and private subnets.](#11-create-a-vpc-in-aws-with-both-public-and-private-subnets)
+[1.1. Creating a VPC in AWS with both public and private subnets.](#11-create-a-vpc-in-aws-with-both-public-and-private-subnets)
 
 1.1.1. Creating VPC for Amazon Elastic Kubernetes Service (EKS) by Using Cloudformation 
 
 1.1.2. Creating VPC for Amazon Elastic Kubernetes Service (EKS) by Using Terraform
 
-[1.2. Deploy a Kubernetes cluster in AWS using EKS (Elastic Kubernetes Service) in the private subnet.](#12-deploy-a-kubernetes-cluster-in-aws-using-eks-elastic-kubernetes-service-in-the-private-subnet)
+[1.2. Deploying a Kubernetes cluster in AWS using EKS (Elastic Kubernetes Service) in the private subnet.](#12-deploy-a-kubernetes-cluster-in-aws-using-eks-elastic-kubernetes-service-in-the-private-subnet)
 
 1.2.1. Firstly, create a role for Amazon EKS
 
@@ -52,7 +52,7 @@
 
 * Testing DB connectivity
 
-[1.4.  Deploy an application consisting of the 12 Microservices to the Amazon EKS Kubernetes cluster.](#14--deploy-an-application-consisting-of-the-12-microservices-to-the-amazon-eks-kubernetes-cluster) 
+[1.4.  Deploying an application consisting of the 12 Microservices to the Amazon EKS Kubernetes cluster.](#14--deploy-an-application-consisting-of-the-12-microservices-to-the-amazon-eks-kubernetes-cluster) 
 
 1.4.1. Deploying Microservices app to EKS cluster via Jenkins Pipelines
 
@@ -79,7 +79,7 @@ Implementing a GitOps workflow using ArgoCD for managing the deployment of appli
 
 2.5. Create a Git repository to store Kubernetes manifests for your sample application.
 
-[2.6. Configure the GitOps tool to continuously synchronize the state of the cluster with the desired state specified in the Git repository.](#26-configure-the-gitops-tool-to-continuously-synchronize-the-state-of-the-cluster-with-the-desired-state-specified-in-the-git-repository)
+[2.6. Configuring the GitOps tool to continuously synchronize the state of the cluster with the desired state specified in the Git repository.](#26-configure-the-gitops-tool-to-continuously-synchronize-the-state-of-the-cluster-with-the-desired-state-specified-in-the-git-repository)
 
 2.6.1. Connecting The Microservice Repositories
 
@@ -93,13 +93,13 @@ Implementing a GitOps workflow using ArgoCD for managing the deployment of appli
 
 ## 4- Scaling and Auto-Healing:
 
-[4.1. Implement Horizontal Pod Autoscaling (HPA) for one or more components of your sample application.](#4--scaling-and-auto-healing-1)
+[4.1. Implementing Horizontal Pod Autoscaling (HPA) for one or more components of your sample application.](#4--scaling-and-auto-healing-1)
 
 4.1.1. Creating the HorizontalPodAutoscaler
 
 4.1.2. Installing Metric Server to The Cluster.
 
-[4.2. Configure the Kubernetes cluster for automatic scaling based on resource utilization.](#42-configuring-the-kubernetes-cluster-for-automatic-scaling-based-on-resource-utilization)
+[4.2. Configuring the Kubernetes cluster for automatic scaling based on resource utilization.](#42-configuring-the-kubernetes-cluster-for-automatic-scaling-based-on-resource-utilization)
 
 4.2.1. Deploying Cluster Autoscaler
 
@@ -160,7 +160,7 @@ Setting up alerts for critical events or performance thresholds.
 
 # 1- Kubernetes Deployment:
 
-## 1.1. Create a VPC in AWS with both public and private subnets.
+## 1.1. Creating a VPC in AWS with both public and private subnets.
 
 ### 1.1.1. Creating VPC for Amazon Elastic Kubernetes Service (EKS) by Using Cloudformation:
 * The yaml installation file for Cloudformation is available in the GitHub repo.
@@ -180,7 +180,7 @@ terraform init
 terraform apply -auto-approve
 ```
 
-## 1.2. Deploy a Kubernetes cluster in AWS using EKS (Elastic Kubernetes Service) in the private subnet.
+## 1.2. Deploying a Kubernetes cluster in AWS using EKS (Elastic Kubernetes Service) in the private subnet.
 
 ### 1.2.1. Firstly, create a role for Amazon EKS:
 ![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/e5e4c54d-642e-43a9-87d8-868117a13e1d)
@@ -258,7 +258,7 @@ For a more detailed explanation, you can review my article in the link, [Working
 ![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/6cb34ab8-e999-4a8d-a600-cf6cd75e7c63)
 ![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/45026146-e4ad-476a-a9e7-217632c5fd72)
 
-## 1.4.  Deploy an application consisting of the 12 Microservices to the Amazon EKS Kubernetes cluster. 
+## 1.4.  Deploying an application consisting of the 12 Microservices to the Amazon EKS Kubernetes cluster. 
 ### 1.4.1. Deploying Microservices app to EKS cluster via Jenkins Pipelines
 ![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/b1735e04-8028-406e-aa99-f48f71d2c033)
 For a more detailed explanation, you can review my article in the link, [Working with Microservices-9: Preparing the staging pipeline in Jenkins, and deploying the microservices app to the Kubernetes cluster using Rancher, Helm, Maven, Amazon ECR, and Amazon S3. Part-2](https://cmakkaya.medium.com/working-with-microservices-9-preparing-the-staging-pipeline-in-jenkins-and-deploying-the-270f4770a723)
@@ -299,7 +299,7 @@ For a more detailed explanation, you can review my article in the link, [Working
 and
 [Argo CD and GitHub Action-1: Running Together Them To Create The CI/CD Pipeline](https://medium.com/@cmakkaya/argo-cd-and-github-action-1-running-together-them-to-create-the-ci-cd-pipeline-6baeed39dde7)
 
-## 2.5. Create a Git repository to store Kubernetes manifests for your sample application.
+## 2.5. Creating a Git repository to store Kubernetes manifests for your sample application.
 ![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/89d3d09c-1b5a-4354-943d-e8488283ca67)
 ![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/201db230-9385-49a6-962d-b34ef03c98d6)
 
@@ -321,7 +321,7 @@ and
 
 ## 4- Scaling and Auto-Healing:
 
-## 4.1.  Implement Horizontal Pod Autoscaling (HPA) for one or more components of your sample application.
+## 4.1.  Implementing Horizontal Pod Autoscaling (HPA) for one or more components of your sample application.
 ## 4.1.1. Creating the HorizontalPodAutoscaler
 For a more detailed explanation, you can review my article in the link, [Diving into Kubernetes-1: Creating and Testing a Horizontal Pod Autoscaling (HPA) in Kubernetes Cluster](https://cmakkaya.medium.com/kubernetes-creating-and-testing-a-horizontal-pod-autoscaling-hpa-in-kubernetes-cluster-548f2378f0c3#ff68)
 ![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/c66d6e66-dcf7-41e8-980f-b01610dd1772)
