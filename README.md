@@ -2,8 +2,13 @@
 
 # Step by Step Full Project: A Kubernetes Cluster With High Availability, Reliability, Auto Scaling, Auto-Healing, and Monitoring.
 
-## Step by Step Full Project : Creating A Kubernetes Cluster With High Availability, Reliability, Auto Scaling, Auto-Healing, and Monitoring On The Amazon EKS via Terrafom Or Cloudformation, And By Using GitOps Workflow (ArgoCD), Jenkins, Rancher, Amazon Elastic Kubernetes Service (EKS), VPC (with both public and private subnets) for Amazon EKS, RDS MySQL Database, AWS Secrets Manager, Amazon Route53, AWS Certificate Manager, CloudWatch, Prometheus and Grafana.
+## Creating A Kubernetes Cluster With High Availability, Reliability, Auto Scaling, Auto-Healing, and Monitoring On The Amazon EKS via Terrafom Or Cloudformation, And By Using GitOps Workflow (ArgoCD), Jenkins, Rancher, Amazon Elastic Kubernetes Service (EKS), VPC (with both public and private subnets) for Amazon EKS, RDS MySQL Database, AWS Secrets Manager, Amazon Route53, AWS Certificate Manager, CloudWatch, Prometheus and Grafana. We will do these practically step by step in this Readme.
 
+⭐ Also, thank you for giving `stars` to my GitHub repository.
+
+### If you liked the article, I would be happy if you click on the [Medium Following](https://cmakkaya.medium.com/) button to encourage me to write and not miss future articles.
+### Your clap, follow, or subscribe, they help my articles to reach the broader audience. Thank you in advance for them.
+### For more info and questions, don't hesitate to get in touch with me on [Linkedin](https://www.linkedin.com/in/cumhurakkaya/) or [Medium](https://cmakkaya.medium.com/).
 
 ## Index of Steps
 ![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/6d3b1ca5-175c-4a09-9b28-0b7328e0601a)
@@ -69,7 +74,7 @@
 ## 2- GitOps Workflow:
 Implementing a GitOps workflow using ArgoCD for managing the deployment of applications in the Kubernetes cluster.
 
-[2.1. Creating ArgoCD](#21-creating-argocd)
+[2.1. Creating ArgoCD](#2--gitops-workflow-1)
 
 2.2. TLS Certificate for ArgoCD via AWS Certificate Manager (ACM) 
 
@@ -277,7 +282,9 @@ For a more detailed explanation, you can review my article in the link, [Working
 
 
 ## 2- GitOps Workflow:
-
+* For a more detailed explanation, you can review my article in the link, [Argo CD-1: Understanding, Installing, and Using Argo CD as a GitOps Continuous Delivery Tool](https://cmakkaya.medium.com/argo-cd-1-understanding-installing-and-using-argo-cd-as-a-gitops-continuous-delivery-tool-0ec0b4e00a77)
+and
+[Argo CD and GitHub Action-1: Running Together Them To Create The CI/CD Pipeline](https://medium.com/@cmakkaya/argo-cd-and-github-action-1-running-together-them-to-create-the-ci-cd-pipeline-6baeed39dde7)
 ### Implement a GitOps workflow using ArgoCD for managing the deployment of applications in the Kubernetes cluster.
 
 ## 2.1. Creating ArgoCD  
