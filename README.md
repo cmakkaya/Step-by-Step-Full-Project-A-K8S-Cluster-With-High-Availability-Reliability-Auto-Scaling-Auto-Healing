@@ -1,6 +1,6 @@
 ## Hi there, <img src = "https://github.com/cmakkaya/cmakkaya/blob/main/wavehand.gif" width = "40" align="center"> Nice to see you. <img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="40"/>
 
-# Step by Step Full Project: A Kubernetes Cluster With High Availability, Reliability, Auto Scaling, and Auto-Healing
+# Step by Step Full Project: A Kubernetes Cluster With High Availability, Reliability, Auto Scaling, Auto-Healing, and Monitoring.
 
 ## Step by Step Full Project : Creating A Kubernetes Cluster With High Availability, Reliability, Auto Scaling, and Auto-Healing On The AWS EKS via Terrafom Or Cloudformation, And By Using GitOps Workflow(ArgoCD), Jenkins, RDS MySQL Database, AWS Secrets Manager, Amazon Route53, AWS Certificate Manager, CloudWatch, Prometheus and Grafana.
 
