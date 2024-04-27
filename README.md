@@ -347,6 +347,7 @@ For a more detailed explanation, you can review my article in the link, [Diving 
 ## 4.2. Configuring the Kubernetes cluster for automatic scaling based on resource utilization.
 
 ## 4.2.1. Deploying Cluster Autoscaler
+* For a more detailed explanation, you can review [this documantation's link.](https://docs.aws.amazon.com/eks/latest/userguide/autoscaling.html) 
 ![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/55eb399b-9901-487e-a2d5-6caa05f9c5cc)
 
 ## 4.2.2. Configuring Dynamic scaling policies via AWS Console
