@@ -192,14 +192,15 @@ terraform apply -auto-approve
 ![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/3bec6f75-e758-42d8-9001-59b718581698)
 
 ### 1.2.2. Creating a Kubernetes cluster in Amazon EKS via eksctl
-#### Use `cumhur-cluster.yaml` file in this repository.
+#### Use `cumhur-cluster.yaml` file in this repository. Don't forget to replace `private subnets ids` with yours.
+For a more detailed explanation, you can review; [my article in the link](https://cmakkaya.medium.com/working-with-microservices-10-explanation-of-the-production-stage-and-creating-amazon-eks-cluster-f202558ca4fb#ed51)    
 ![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/2fde3799-3d43-4265-897a-eac27e0c10df)
 ![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/c0f5c786-62f1-4194-93cc-3a40fd14d5dd)
 ![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/1d17fec9-9d89-4a23-ae68-bea0ce41ac64)
 ![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/9e0d999f-1f68-42d9-a3ef-c7e1ace4f250)
 
 ### 1.2.3. Creating a Kubernetes cluster in Amazon EKS via Rancher
-#### If we want, we can also set up our Amazon EKS cluster with Rancher.
+#### If we want, we can also set up our Amazon EKS cluster with Rancher. 
 ![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/fbd8ee67-0bd9-4f3f-9bfa-84fa97bc18af)
 For a more detailed explanation, you can review my article in the link,
 [Working with Microservices-6: Creating the Rancher server, Running Rancher in it, and Preparing Rancher to use in Jenkins Pipeline](https://cmakkaya.medium.com/working-with-microservices-6-creating-the-rancher-server-running-rancher-in-it-and-preparing-ee0e1bfdaf20) 
@@ -207,7 +208,7 @@ and
 [Working with Microservices-8: Preparing the staging pipeline in Jenkins, and deploying the microservices app to the Kubernetes cluster using Rancher, Helm, Maven, Amazon ECR, and Amazon S3. Part-1](https://cmakkaya.medium.com/working-with-microservices-8-preparing-the-staging-pipeline-in-jenkins-and-deploying-the-a86cde2e2605)
 
 ## 1.2.4. Creating a Kubernetes cluster in Amazon EKS via Terraform
-#### If we want, we can also set up our Amazon EKS cluster Terraform.
+#### If we want, we can also set up our Amazon EKS cluster Terraform. Use `.tf files` in this repository.
 * The terraform-eks installation .tf files are available in the GitHub repo.
 ![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/c072ae40-a6df-43fd-b6b3-7ea4d2ef1a23)
 * Also, the "terraform-eks" files will create a VPC for the AWS EKS cluster.
