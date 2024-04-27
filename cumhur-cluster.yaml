@@ -1,0 +1,24 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: cumhur-eks-cluster
+  region: us-east-1
+
+vpc:
+  subnets:
+    private:
+      us-east-1a: { id: subnet-0d58476848ba9f01b }
+      us-east-1b: { id: subnet-097474cd204ad5bf0 }
+
+managedNodeGroups:
+  - name: ng-1-cumhur-node
+    instanceType: t3a.medium
+    desiredCapacity: 2
+    minSize: 2
+    maxSize: 3
+    volumeSize: 10
+    privateNetworking: true
+    iam:
+      withAddonPolicies:
+        imageBuilder: true
