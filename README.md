@@ -52,7 +52,7 @@
 
 * Testing DB connectivity
 
-[1.4.  Deploying an application consisting of the 12 Microservices to the Amazon EKS Kubernetes cluster.](#14--deploy-an-application-consisting-of-the-12-microservices-to-the-amazon-eks-kubernetes-cluster) 
+[1.4.  Deploying an application consisting of the 12 Microservices to the Amazon EKS Kubernetes cluster.](#14--deploying-an-application-consisting-of-the-12-microservices-to-the-amazon-eks-kubernetes-cluster) 
 
 1.4.1. Deploying Microservices app to EKS cluster via Jenkins Pipelines
 
@@ -69,7 +69,7 @@
 ## 2- GitOps Workflow:
 Implementing a GitOps workflow using ArgoCD for managing the deployment of applications in the Kubernetes cluster.
 
-[2.1. Creating ArgoCD](#2--gitops-workflow-1)
+[2.1. Creating ArgoCD](#21-creating-argocd)
 
 2.2. TLS Certificate for ArgoCD via AWS Certificate Manager (ACM) 
 
@@ -115,7 +115,7 @@ Implementing a GitOps workflow using ArgoCD for managing the deployment of appli
 Integrating AWS CloudWatch for monitoring and logging of the Kubernetes cluster and the deployed application.
 Setting up alerts for critical events or performance thresholds.
 
-[5.1. Integrate AWS CloudWatch for monitoring and logging of the Kubernetes cluster and the deployed application.](#51-integrate-aws-cloudwatch-for-monitoring-and-logging-of-the-kubernetes-cluster-and-the-deployed-application)
+[5.1. Integrate AWS CloudWatch for monitoring and logging of the Kubernetes cluster and the deployed application.](#511-enabling-control-plane-logging)
 
 5.1.1. Enabling Control plane logging 
 
@@ -150,7 +150,7 @@ Setting up alerts for critical events or performance thresholds.
 [5.3. For ASG Nodes](#53-for-asg-nodes)
 
 ## 6- Documentation and GitOps Repository
-[GitHub Repository address](#6--documentation-and-gitops-repository-1)
+[GitHub Repository address](#6--documentation-and-gitops-repository-1-1)
 
 ## 7- Cleaning up
 [For installation with terraform](#7--cleaning-up-1)
@@ -467,3 +467,6 @@ terraform destroy --auto-approve
 ![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/7db15b05-a990-4df8-aa96-81ffc517d179)
 
 
+### If you liked the article, I would be happy if you click on the [Medium Following](https://cmakkaya.medium.com/) button to encourage me to write and not miss future articles.
+### Your clap, follow, or subscribe, they help my articles to reach the broader audience. Thank you in advance for them.
+### For more info and questions, don't hesitate to get in touch with me on [Linkedin](https://www.linkedin.com/in/cumhurakkaya/) or [Medium](https://cmakkaya.medium.com/).
