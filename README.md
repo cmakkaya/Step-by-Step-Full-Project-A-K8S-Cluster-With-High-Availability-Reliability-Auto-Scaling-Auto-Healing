@@ -165,7 +165,7 @@ Setting up alerts for critical events or performance thresholds.
 ## 1.1. Creating a VPC in AWS with both public and private subnets.
 
 ### 1.1.1. Creating VPC for Amazon Elastic Kubernetes Service (EKS) by Using Cloudformation:
-* The yaml installation file for Cloudformation is available in the GitHub repo.
+* The yaml installation file for Cloudformation is available in this GitHub repo.
 * For a more detailed explanation, you can review [this documantation's link.](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/GettingStarted.html) 
 ![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/feb5e118-6a51-43d1-9d32-9d8430bca87f)
 ![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/bab0a3f5-f72e-4cf5-93ab-6747871e18d0)
@@ -173,7 +173,7 @@ Setting up alerts for critical events or performance thresholds.
 
 
 ### 1.1.2. Creating VPC for Amazon Elastic Kubernetes Service (EKS) by Using Terraform
-* The terraform-vpc installation `.tf files` are available in the GitHub repo.
+* The terraform-vpc installation `.tf files` are available in this GitHub repo.
 * For a more detailed explanation, you can review [this documantation's link.](https://developer.hashicorp.com/terraform/tutorials/aws-get-started) 
 ![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/6bac234b-bc63-4666-a1c3-435385e348e3)
 
