@@ -15,11 +15,11 @@
 
 ## 1- Kubernetes Deployment:
 
-[1.1. Creating a VPC in AWS with both public and private subnets.](#11-creating-a-vpc-in-aws-with-both-public-and-private-subnets)
+[1.1. Creating a VPC in AWS with both public and private subnets for Amazon Elastic Kubernetes Service (EKS).](#11-creating-a-vpc-in-aws-with-both-public-and-private-subnets)
 
-1.1.1. Creating VPC for Amazon Elastic Kubernetes Service (EKS) by Using Cloudformation 
+1.1.1. Creating VPC for Amazon EKS by Using Cloudformation 
 
-1.1.2. Creating VPC for Amazon Elastic Kubernetes Service (EKS) by Using Terraform
+1.1.2. Creating VPC for Amazon EKS by Using Terraform
 
 [1.2. Deploying a Kubernetes cluster in AWS using EKS (Elastic Kubernetes Service) in the private subnet.](#12-deploying-a-kubernetes-cluster-in-aws-using-eks-elastic-kubernetes-service-in-the-private-subnet)
 
