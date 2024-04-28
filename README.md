@@ -409,7 +409,7 @@ It provides high availability by distributing the EKS cluster across multiple AW
 
 ## 4.5. Caching for Microservice Applications by using Amazon CloudFront
 #### Thus, it helps reduce the load on the originating server (the web server from which CloudFront retrieves the content) and improves content delivery performance. It also improves the usability of our website, providing higher usability.
-#### We also protect against Distributed Denial of Service – DDoS attacks that affect the availability of a website.
+#### We also protect against Distributed Denial of Service (DDoS) attacks that affect the availability of a website.
 ![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/a4df16b8-f9a6-429e-b8fc-ed60bb6604c1)
 
 
