@@ -31,7 +31,7 @@
 
 1.2.4. Creating a Kubernetes cluster in Amazon EKS via Terrafom
 
-[1.3. Deploying an application that consists of 10 Microservices into the Kubernetes cluster.](#13-deploying-an-application-that-consists-of-10-microservices-into-the-kubernetes-cluster)
+[1.3. Deploying an application that consists of 12 Microservices into the Kubernetes cluster.](#13-deploying-an-application-that-consists-of-12-microservices-into-the-kubernetes-cluster)
 
 1.3.1. Creating RDS MySQL Database
 
@@ -241,7 +241,7 @@ terraform apply -var="cluster_name=eks-cumhur-cluster" -auto-approve
 ![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/9dc2d7eb-1f91-44b2-8115-26cda212b025)
 
 
-## 1.3. Deploying an application that consists of 10 Microservices into the Kubernetes cluster. 
+## 1.3. Deploying an application that consists of 12 Microservices into the Kubernetes cluster. 
 
 ### 1.3.1. Creating RDS MySQL Database
 ![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/a4c14b1a-999a-402b-8b01-5d3508f4ae2a)
