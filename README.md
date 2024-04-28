@@ -152,13 +152,10 @@ Setting up alerts for critical events or performance thresholds.
 
 5.2.3. Setting Up An Alarm By Using the Grafana and Prometheus
 
-[5.3. For ASG Nodes](#53-for-asg-nodes)
+[5.3. Alarm for The Nodes of Auto Scaling Groups.](#53-alarm-for-the-nodes-of-auto-scaling-groups)
 
-## 6- Documentation and GitOps Repository
-[GitHub Repository address](#6--documentation-and-gitops-repository-1-1)
-
-## 7- Cleaning up
-[For installation with terraform](#7--cleaning-up-1)
+## 6- Cleaning up
+[For installation with terraform](#6--cleaning-up-1)
 
 ----------------------------------------------------------------------------------------------------------------------
 
@@ -507,7 +504,7 @@ helm install grafana grafana/grafana \
 For a more detailed explanation, you can review my article in the link, [Working with Microservices-18: Setting Up An Alarm By Using the Grafana Dashboard and Prometheus ConfigMap.yml](https://cmakkaya.medium.com/working-with-microservices-18-setting-up-an-alarm-by-using-the-grafana-dashboard-and-prometheus-a1c53671024d)
 ![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/914ecc1b-f784-46ba-9662-bfb0031b31b7)
 
-## 5.3. For ASG Nodes
+## 5.3. Alarm for The Nodes of Auto Scaling Groups.
 ![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/7e6194fa-b773-4283-817a-86b5d1561c6b)
 
 ![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/96b2c81a-dbb7-4639-bc71-f4c73ba4c824)
