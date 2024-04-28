@@ -426,10 +426,10 @@ I can enable CloudWatch Observability in our clusters through the CloudWatch Obs
 eksctl utils update-cluster-logging --enable-types={ all } --region=us-east-1 --cluster=cumhur-eks-cluster
 ```
 OR
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/3ae32531-3ff1-4c85-b99b-33edf69fbf43)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/27bbe9e2-bde8-4592-bd3a-9810d20bb686)
 
 ## 5.1.2.  Viewing cluster control plane logs
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/b8d1a096-81cc-452f-b236-51a3cc030b7d)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/a325bd22-e2b0-4cd4-803b-641b9dfd30cd)
 
 ## 5.1.3. Setting up Container Insights on Amazon EKS and Kubernetes
 ## 5.1.3.1.  To attach the necessary policy to the IAM role for your worker nodes.
@@ -470,7 +470,7 @@ kubectl apply -f https://raw.githubusercontent.com/aws-samples/amazon-cloudwatch
 ```
 
 ### 5.1.5. Creating an alert via Cloudwatch
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/35489151-14c3-41cf-a08d-fe63f7c34f6a)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/dc93f7e4-bfc8-45dd-9284-ca884bc1fb8a)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -487,7 +487,7 @@ helm install prometheus prometheus-community/prometheus \
     --set alertmanager.persistentVolume.storageClass="gp2" \
     --set server.persistentVolume.storageClass="gp2"
 ```
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/a121efd5-143c-47b4-ad95-038ebf06e52d)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/9d70859a-9450-4298-b31a-440b10e56dcc)
 
 ### 5.2.2. Deploying  Grafana
 ```bash
@@ -501,30 +501,27 @@ helm install grafana grafana/grafana \
     --values ${HOME}/environment/grafana/grafana.yaml \
     --set service.type=LoadBalancer
 ```
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/e1ca6866-8c94-4e07-8214-de0c542c5302)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/9de7cd74-1d5f-4a30-b6e5-81d6d4e179bc)
 
 ### 5.2.3. Setting Up An Alarm By Using the Grafana and Prometheus
 For a more detailed explanation, you can review my article in the link, [Working with Microservices-18: Setting Up An Alarm By Using the Grafana Dashboard and Prometheus ConfigMap.yml](https://cmakkaya.medium.com/working-with-microservices-18-setting-up-an-alarm-by-using-the-grafana-dashboard-and-prometheus-a1c53671024d)
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/b33ab804-95d5-4b25-8411-3da83891a805)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/914ecc1b-f784-46ba-9662-bfb0031b31b7)
 
 ## 5.3. For ASG Nodes
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/1848dd15-4ceb-4b77-87f8-457ff140a20b)
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/5d0a8194-d9e7-4591-8966-76f6e8adfbb7)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/7e6194fa-b773-4283-817a-86b5d1561c6b)
 
-## 6- Documentation and GitOps Repository:
-[GitHub Repository address](https://github.com/cmakkaya/cumhur-microservices-deploy)
-#### Added comprehensive documentation on the entire setup, including steps for deploying the Kubernetes cluster, GitOps workflow, AWS integration, and monitoring/logging configuration.
-#### Included a README.md file in your GitOps repository explaining the directory structure, how to contribute, and how the GitOps workflow operates.
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/96b2c81a-dbb7-4639-bc71-f4c73ba4c824)
 
-## 7- Cleaning up
+## 6- Cleaning up
 For installation with terraform:
 ```bash
 terraform destroy --auto-approve
 ```
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/118acb8c-5d75-4614-898d-e2409dc0b4aa)
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/d3e2ef28-84e0-4b16-b4d0-23cc55ac3038)
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/7db15b05-a990-4df8-aa96-81ffc517d179)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/f3200631-f125-4fa4-a770-c4637c216ffd)
 
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/6b1b9c34-d19f-4aaf-b66e-baedf5c07399)
+
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/3f4261d6-015d-4807-b1be-76c3d18e889d)
 
 ### If you liked the article, I would be happy if you click on the [Medium Following](https://cmakkaya.medium.com/) button to encourage me to write and not miss future articles.
 ### Your clap, follow, or subscribe, they help my articles to reach the broader audience. Thank you in advance for them.
