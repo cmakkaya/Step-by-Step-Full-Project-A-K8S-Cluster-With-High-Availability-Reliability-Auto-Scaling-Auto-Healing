@@ -37,9 +37,9 @@
 
 1.3.2. Implementing AWS Secrets Manager to securely manage sensitive information.
 
-1.3.4. Using AWS Secrets Manager's secret in RDS MySQL Database.
+1.3.3. Using AWS Secrets Manager's secret in RDS MySQL Database.
 
-1.3.5. Setting RDS MySQL Database for High Availability and Reliability.
+1.3.4. Setting RDS MySQL Database for High Availability and Reliability.
 
 * Deployment options: Multi-AZ DB instance
 
@@ -53,7 +53,7 @@
 
 * Creating an ElastiCache cluster from RDS for read performance. 
 
-1.3.6.  Connecting RDS MySQL Database to microservice application by modifying mysql-server-service.yaml file
+1.3.5.  Connecting RDS MySQL Database to microservice application by modifying mysql-server-service.yaml file
 
 * Testing DB connectivity
 
@@ -201,14 +201,16 @@ terraform apply -auto-approve
 ### 1.2.2. Creating a Kubernetes cluster in Amazon EKS via eksctl
 #### Use `cumhur-cluster.yaml` file in this repository. Don't forget to replace `private subnets ids` with yours.
 For a more detailed explanation, you can review; [my article in the link](https://cmakkaya.medium.com/working-with-microservices-10-explanation-of-the-production-stage-and-creating-amazon-eks-cluster-f202558ca4fb#ed51)    
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/2fde3799-3d43-4265-897a-eac27e0c10df)
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/c0f5c786-62f1-4194-93cc-3a40fd14d5dd)
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/1d17fec9-9d89-4a23-ae68-bea0ce41ac64)
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/9e0d999f-1f68-42d9-a3ef-c7e1ace4f250)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/a5ccc7c8-b6d8-4bc3-aa79-5e0d37cb6637)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/9cd4dd40-a5a4-4eaa-b6a0-8f9ff251fc79)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/3d51db41-cf3f-4bdb-b797-678f24605a53)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/893c0d67-697e-4fa3-9f5c-6ad7c93b21d3)
+
 
 ### 1.2.3. Creating a Kubernetes cluster in Amazon EKS via Rancher
 #### If we want, we can also set up our Amazon EKS cluster with Rancher. 
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/fbd8ee67-0bd9-4f3f-9bfa-84fa97bc18af)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/08da79be-d8c7-4cdd-857d-e6c7b468dc49)
+
 For a more detailed explanation, you can review my article in the link,
 [Working with Microservices-6: Creating the Rancher server, Running Rancher in it, and Preparing Rancher to use in Jenkins Pipeline](https://cmakkaya.medium.com/working-with-microservices-6-creating-the-rancher-server-running-rancher-in-it-and-preparing-ee0e1bfdaf20) 
 and
@@ -217,9 +219,11 @@ and
 ## 1.2.4. Creating a Kubernetes cluster in Amazon EKS via Terraform
 #### If we want, we can also set up our Amazon EKS cluster Terraform. Use `.tf files` in this repository.
 * The terraform-eks installation .tf files are available in the GitHub repo.
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/c072ae40-a6df-43fd-b6b3-7ea4d2ef1a23)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/2f4ca65c-918e-4841-83d6-7e03da8b87d8)
+
 * Also, the "terraform-eks" files will create a VPC for the AWS EKS cluster.
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/03a86c2b-d760-44bb-850a-a51c2f921860)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/a046a114-57d9-43c5-90cc-02b1fdfa5959)
+
 ####  Goto "terraform-eks" folder and running following commands
 ```bash
 terraform init
@@ -229,67 +233,93 @@ terraform init
 terraform apply -var="cluster_name=eks-cumhur-cluster" -auto-approve
 ```
 * The output of the terraform apply command:
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/f08ba178-4791-414d-9119-0523b36ad726)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/5badcacf-d0f6-4bfc-b371-9187f0211bcc)
+
 * Controlling created EKS cluster via kubectl command:
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/853c9020-e3e8-4510-a951-c5740fe110ea)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/d116dfd7-e51a-4311-a792-4dc950b9230c)
+
 * Controlling created EKS cluster in AWS  Console:
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/6c5b14ae-eae4-4538-a9ca-c5b4770fc902)
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/3167136e-9b27-4b3f-9372-5c93b7153f8f)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/a33914fa-4484-46dc-834d-7f8a12df8cdc)
+
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/9dc2d7eb-1f91-44b2-8115-26cda212b025)
+
 
 ## 1.3. Deploying a sample microservices application of your choice into the Kubernetes cluster. 
 
 ### 1.3.1. Creating RDS MySQL Database
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/e1f02825-fafd-4097-bbd0-cf5e68e2744c)
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/1243208b-44e0-48af-bf17-31b1dd9fa314)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/a4c14b1a-999a-402b-8b01-5d3508f4ae2a)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/c24d2359-2232-4a58-b6bc-ce45ef92825a)
+
 For a more detailed explanation, you can review my article in the link, [Working with Microservices-14: Creating Amazon RDS MySQL(8.0.31) database for the Kubernetes cluster in the Production stage.](https://cmakkaya.medium.com/working-with-microservices-14-creating-amazon-rds-mysql-database-for-kubernetes-cluster-in-the-5771a6208469)
+
 ### 1.3.2. Implementing AWS Secrets Manager to securely manage sensitive information.
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/28b07cc6-6dbd-403e-ad5d-40828167a2c2)
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/baed0f68-4352-4703-a215-527202792294)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/e5e97b90-2132-41d0-a73c-ac473fb6f288)
 
-### 1.3.4. Using AWS Secrets Manager's secret in RDS MySQL Database.
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/aff19031-7508-4fe2-928f-6d35cd6ad450)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/adb19654-7d5e-46d9-978c-372ae037597b)
 
-### 1.3.5. Setting RDS MySQL Database for High Availability and Reliability.
+
+### 1.3.3. Using AWS Secrets Manager's secret in RDS MySQL Database.
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/9b62f72f-ae3c-4e13-97bf-d54164de30d2)
+
+### 1.3.4. Setting RDS MySQL Database for High Availability and Reliability.
 * Deployment options: Multi-AZ DB instance for High Availability and failover.
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/1c6a1e5c-dbac-4bc4-9739-89f440a0cf88)
-* Instance and Storage configuration
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/6bb5bb3f-30c0-4d79-890a-dca82947b5ba)
-* Enabled Storage Auto Scaling
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/cfd732ec-b291-4885-ab57-c717a740de40)
-* Automated backups (Point time recovery)
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/bf6325b2-cce4-4f33-b523-93d93a397bb6)
-* For Amazon CloudWatch Logs
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/52d63ee3-393a-44b8-9c3d-b01d3e10c57d)
-* Creating an ElastiCache cluster from RDS for read performance. In order to save up to 55% in cost and gain up to 80x faster read performance using ElastiCache with RDS for MySQL.
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/160445bd-feca-45c5-b7c8-b63026d287fc)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/e20673fe-ed05-4b5d-89a5-9c2ea203408d)
 
-### 1.3.6.  Connecting RDS MySQL Database to microservice application by modifying mysql-server-service.yaml file
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/51d59ec6-934a-408b-91fb-ecd5f5be9ff9)
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/fbea70ff-7634-4856-9b1b-a08f11eb9667)
+* Instance and Storage configuration
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/05715282-e483-42c1-8109-5063b8ed0bbd)
+
+* Enabled Storage Auto Scaling
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/b9df8489-ed30-4ec8-bca4-158a5d395912)
+
+* Automated backups (Point time recovery)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/44996aa0-4ad8-47d4-afa4-6ce8335dbb95)
+
+* For Amazon CloudWatch Logs
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/6899eb1d-f675-4338-b81a-ed5579d47aff)
+
+* Creating an ElastiCache cluster from RDS for read performance. In order to save up to 55% in cost and gain up to 80x faster read performance using ElastiCache with RDS for MySQL.
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/a6ad15c9-36e5-43e2-b03a-6dbf3ef8216a)
+
+
+### 1.3.5.  Connecting RDS MySQL Database to microservice application by modifying mysql-server-service.yaml file
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/caf300b2-030f-4b91-9bed-7300e2b95797)
+
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/ef20929e-7de4-4a3c-8dc1-1a2e4b95480b)
+
 * Testing DB connectivity
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/6048993a-e20b-45ce-a796-09e0ec8a4281)
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/4dce3de6-382b-4494-9961-10537bb38726)
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/6cb34ab8-e999-4a8d-a600-cf6cd75e7c63)
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/45026146-e4ad-476a-a9e7-217632c5fd72)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/33bc700c-19f4-4e7f-9450-360437f1ba4a)
+
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/0d17e220-5b87-444b-82e8-eb8246254f76)
+
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/f2fc686d-db64-4534-8b3c-06e728de2163)
+
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/525965cf-a3ff-497d-8fb5-ee5c8ddb8f4f)
+
 
 ## 1.4.  Deploying an application consisting of the 12 Microservices to the Amazon EKS Kubernetes cluster. 
 ### 1.4.1. Deploying Microservices app to EKS cluster via Jenkins Pipelines
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/b1735e04-8028-406e-aa99-f48f71d2c033)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/f3ee6cb0-8e5a-4022-987a-4e659f9ba38d)
+
 For a more detailed explanation, you can review my article in the link, [Working with Microservices-9: Preparing the staging pipeline in Jenkins, and deploying the microservices app to the Kubernetes cluster using Rancher, Helm, Maven, Amazon ECR, and Amazon S3. Part-2](https://cmakkaya.medium.com/working-with-microservices-9-preparing-the-staging-pipeline-in-jenkins-and-deploying-the-270f4770a723)
 ### 1.4.2. DNS name
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/8219e9e5-7665-4878-a89a-2a6a4cebaea4)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/e3b646c7-e4a6-4705-a14b-bf57d8da98c0)
+
 For a more detailed explanation, you can review my article in the link, [Working with Microservices-12: Setting Domain Name and TLS certificate for Production Pipeline using Route 53, Let’s Encrypt and Cert Manager](https://medium.com/@cmakkaya/working-with-microservices-12-setting-domain-name-and-tls-certificate-for-production-pipeline-649aef11924d#bae6)
+
 ### 1.4.3. Running Deployment, Services, and Ingress
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/896a5f93-515f-45e9-8e77-cae78ab60fd3)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/95860dc1-da91-4ec0-9f25-b78845eab4c1)
+
 ### 1.4.4. Controlling Microservices application via The Internet Browser
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/8126259d-790f-4050-94ec-f888514e084b)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/ef077311-75b8-4154-9768-8e97d967f201)
+
 ### 1.4.5. SSL/TLS Certificate via Let's Encrypt and Cert Manager
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/c6b10dd4-aee3-4acb-b5b3-a076507d22f2)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/214ff28f-3617-4f58-b158-89477d22db96)
+
 
 ## 1.5. Controlling and Modifying the Amazon EKS cluster via Rancher
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/d150ae46-26f4-42d6-8a49-ebdb6eca6975)
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/5ba9a773-5728-4f99-8f23-3802fa497acc)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/d9a38e79-4478-47e6-a221-073db785714b)
 
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/c1113ae4-08ff-4bdc-b97c-34339e16b553)
 
 ## 2- GitOps Workflow:
 * For a more detailed explanation, you can review my article in the link, [Argo CD-1: Understanding, Installing, and Using Argo CD as a GitOps Continuous Delivery Tool](https://cmakkaya.medium.com/argo-cd-1-understanding-installing-and-using-argo-cd-as-a-gitops-continuous-delivery-tool-0ec0b4e00a77)
@@ -298,38 +328,47 @@ and
 ### Implement a GitOps workflow using ArgoCD for managing the deployment of applications in the Kubernetes cluster.
 
 ## 2.1. Creating ArgoCD  
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/5b9be837-82bf-495d-9602-47ff9de0f92f)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/939fa271-6945-416a-9922-5586f81be2e5)
+
 
 ## 2.2. TLS Certificate for ArgoCD via AWS Certificate Manager (ACM) 
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/73bd6ecb-d881-44df-87ae-ab6b5aa13f9d)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/72207016-42b8-4e8c-90bd-9b5ef51eaeb2)
+
 
 ## 2.3. DNS Name for ArgoCD via  Amazon Route53  
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/dc823c0e-d271-41a1-bc31-fa9ea3b585c8)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/f0c0d89e-cd2b-4b3a-b79f-ca94fea543d2)
 
 ## 2.4. Launching ArgoCD
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/c93b5b29-6464-4203-b699-dc38007359e5)
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/6dc89dc1-8580-4551-bfb2-7d0561a7f84c)
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/0e484f4e-5b8c-485a-aa13-de44a8a24c85)
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/c66d6e66-dcf7-41e8-980f-b01610dd1772)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/10c002de-5218-4bf1-805a-8e14cd29e1d3)
+
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/41b8364f-a38a-4190-ab09-2220221f0966)
+
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/1c04d75d-95b8-4167-9ce0-12296082796f)
+
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/62ad5b3c-5667-48bb-8da6-a68df0ee9fbb)
+
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/b6f30e9a-3087-43c6-8dba-ccf77b3b5eef)
 
 * For a more detailed explanation, you can review my article in the link, [Argo CD-1: Understanding, Installing, and Using Argo CD as a GitOps Continuous Delivery Tool](https://cmakkaya.medium.com/argo-cd-1-understanding-installing-and-using-argo-cd-as-a-gitops-continuous-delivery-tool-0ec0b4e00a77)
 and
 [Argo CD and GitHub Action-1: Running Together Them To Create The CI/CD Pipeline](https://medium.com/@cmakkaya/argo-cd-and-github-action-1-running-together-them-to-create-the-ci-cd-pipeline-6baeed39dde7)
 
 ## 2.5. Creating a Git repository to store Kubernetes manifests for your sample application.
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/89d3d09c-1b5a-4354-943d-e8488283ca67)
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/201db230-9385-49a6-962d-b34ef03c98d6)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/274a519d-f655-48f1-9365-db42adcde5a4)
+
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/3eaff376-54a6-47f2-a4eb-cfd6705b4c29)
 
 ## 2.6. Configure the GitOps tool to continuously synchronize the state of the cluster with the desired state specified in the Git repository.
 ## 2.6.1. Connecting The Microservice Repositories
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/3fc2a5f3-4083-4bc6-90bd-bcde643557b8)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/39a57867-b061-4a63-bab8-882bfd8bc8fd)
 
 ## 2.6.2. Creating a new app in ArgooCD for Microservice Applications
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/17939493-2281-47b8-af03-dae821a88e79)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/bd67da37-c529-4489-a5b5-bb9e8e88e373)
 
 ## 2.6.3. Observing the operation and synchronization of the Microservice application on ArgoCD
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/3c90eb76-9cab-4208-a9c9-68a3c623837e)
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/bfe23aa2-0f0a-4543-8ba8-d43440892b33)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/842b7a6d-d9bd-4aeb-b893-32b9caafb665)
+
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/acef6e47-a065-4921-b08a-1b7ab241c227)
 
 ## 3- AWS Integration:
 
@@ -341,21 +380,23 @@ and
 ## 4.1.  Implementing Horizontal Pod Autoscaling (HPA) for one or more components of your sample application.
 ## 4.1.1. Creating the HorizontalPodAutoscaler
 For a more detailed explanation, you can review my article in the link, [Diving into Kubernetes-1: Creating and Testing a Horizontal Pod Autoscaling (HPA) in Kubernetes Cluster](https://cmakkaya.medium.com/kubernetes-creating-and-testing-a-horizontal-pod-autoscaling-hpa-in-kubernetes-cluster-548f2378f0c3#ff68)
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/c66d6e66-dcf7-41e8-980f-b01610dd1772)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/a4a5f23c-59ed-46ff-beeb-e38de98db6e6)
 
 ## 4.1.2. Installing Metric Server to The Cluster.
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/d39b5e82-fd5d-4c10-9074-8e3cc07768a2)
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/1d3b01d9-2523-41f6-bc5f-5fbca6a631e1)
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/3202a1e7-dcc8-4a38-a81d-43329854a914)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/e02f7ae7-02e5-42ca-b402-7b472f4d202d)
+
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/c749636e-cc9d-4119-827e-29446d32a0eb)
+
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/275c801e-3b1f-4a53-a779-b90a458c0dba)
 
 ## 4.2. Configuring the Kubernetes cluster for automatic scaling based on resource utilization.
 
 ## 4.2.1. Deploying Cluster Autoscaler
 * For a more detailed explanation, you can review [this documantation's link.](https://docs.aws.amazon.com/eks/latest/userguide/autoscaling.html) 
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/55eb399b-9901-487e-a2d5-6caa05f9c5cc)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/6a20350b-7612-4448-b63a-f66832970422)
 
 ## 4.2.2. Configuring Dynamic scaling policies via AWS Console
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/ef9a1506-8ef5-4729-8c60-1aee22b98978)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/532d9d0f-84c0-49c0-9831-212e8cdcb961)
 
 ## 4.3. Multi-AZ Kubernetes Cluster for Reliability
 It provides high availability by distributing the EKS cluster across multiple AWS Availability Zones (AZs), thus it increases "Reliability". 
@@ -372,7 +413,7 @@ It provides high availability by distributing the EKS cluster across multiple AW
 ## 4.5. Caching for Microservice Applications by using Amazon CloudFront
 #### Thus, it helps reduce the load on the originating server (the web server from which CloudFront retrieves the content) and improves content delivery performance. It also improves the usability of our website, providing higher usability.
 #### We also protect against Distributed Denial of Service – DDoS attacks that affect the availability of a website.
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/33a65f30-c388-46c7-be6c-abd924d78a5f)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/a4df16b8-f9a6-429e-b8fc-ed60bb6604c1)
 
 
 ## 5- Monitoring and Logging:
