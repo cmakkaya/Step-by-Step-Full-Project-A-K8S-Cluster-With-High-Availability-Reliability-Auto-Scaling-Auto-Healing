@@ -7,7 +7,7 @@
 ### ⭐ Also, thank you for giving `stars` to my GitHub repository.
 
 # Index of Steps
-![image](https://github.com/cmakkaya/cumhur-microservices-deploy/assets/110052470/6d3b1ca5-175c-4a09-9b28-0b7328e0601a)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/d37e96c8-27d3-4d30-a3d4-caa4a0c0abd8)
 
 #### If you liked the article, I would be happy if you click on the [Medium Following](https://cmakkaya.medium.com/) button to encourage me to write and not miss future articles.
 #### Your clap, follow, or subscribe, they help my articles to reach the broader audience. Thank you in advance for them.
