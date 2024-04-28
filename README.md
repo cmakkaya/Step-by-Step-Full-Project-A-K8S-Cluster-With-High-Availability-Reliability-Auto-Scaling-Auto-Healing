@@ -520,6 +520,8 @@ terraform destroy --auto-approve
 
 ![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/3f4261d6-015d-4807-b1be-76c3d18e889d)
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ### If you liked the article, I would be happy if you click on the [Medium Following](https://cmakkaya.medium.com/) button to encourage me to write and not miss future articles.
 ### Your clap, follow, or subscribe, they help my articles to reach the broader audience. Thank you in advance for them.
 ### For more info and questions, don't hesitate to get in touch with me on [Linkedin](https://www.linkedin.com/in/cumhurakkaya/) or [Medium](https://cmakkaya.medium.com/).
