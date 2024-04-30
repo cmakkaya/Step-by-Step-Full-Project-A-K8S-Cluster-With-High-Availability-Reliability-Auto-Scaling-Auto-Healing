@@ -23,7 +23,7 @@
 
 [1.2. Deploying a Kubernetes cluster in AWS using EKS (Elastic Kubernetes Service) in the private subnet.](#12-deploying-a-kubernetes-cluster-in-aws-using-eks-elastic-kubernetes-service-in-the-private-subnet)
 
-1.2.1. Firstly, create a role for Amazon EKS
+1.2.1. Firstly, creating a role for Amazon EKS
 
 1.2.2. Creating a Kubernetes cluster in Amazon EKS via eksctl
 
