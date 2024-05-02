@@ -173,11 +173,11 @@ Setting up alerts for critical events or performance thresholds.
 
 
 ### 1.1.2. Creating VPC for Amazon Elastic Kubernetes Service (EKS) by Using Terraform
-* The terraform-vpc installation `.tf files` are available in this GitHub repo.
+* The terraform-vpc installation's `.tf files` are available in this GitHub repo.
 * For a more detailed explanation, you can review [this documantation's link.](https://developer.hashicorp.com/terraform/tutorials/aws-get-started) 
 ![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/6bac234b-bc63-4666-a1c3-435385e348e3)
 
-####  Goto "terraform-vpc" folder and running following commands
+####  Goto "terraform-vpc" folder and run the following commands:
 ```bash
 terraform init
 ```
@@ -405,7 +405,7 @@ It provides high availability by distributing the EKS cluster across multiple AW
 * ElastiCache cluster (to save up to 55% in cost and gain up to 80x faster read performance using ElastiCache with RDS for MySQL).
 * Enabled Storage Auto Scaling
 * Read replica to increase the scalability for high performance.  I did not implement this, However, I could use Read Replicas with Multi-AZ as part of a disaster recovery (DR) strategy for my production RDS database. Also, Read Replicas helps in decreasing load on the primary DB by serving read-only traffic.
-#### NOTE: This section was done in items 1.3.
+#### NOTE: This section was done in item 1.3.
 
 ## 4.5. Caching for Microservice Applications by using Amazon CloudFront
 #### Thus, it helps reduce the load on the originating server (the web server from which CloudFront retrieves the content) and improves content delivery performance. It also improves the usability of our website, providing higher usability.
@@ -416,7 +416,7 @@ It provides high availability by distributing the EKS cluster across multiple AW
 ## 5- Monitoring and Logging:
 
 ## 5.1. Integrate AWS CloudWatch for monitoring and logging of the Kubernetes cluster and the deployed application.
-I can enable CloudWatch Observability in our clusters through the CloudWatch Observability add-on. After my cluster is created, navigate to the add-ons tab and install CloudWatch Observability add-on to enable CloudWatch Application Signals and Container Insights and start ingesting telemetry into CloudWatch.
+I can enable CloudWatch Observability in our clusters through the CloudWatch Observability add-on. After my cluster is created, navigate to the add-ons tab and install the CloudWatch Observability add-on to enable CloudWatch Application Signals and Container Insights and start ingesting telemetry into CloudWatch.
 
 ## 5.1.1. Enabling Control plane logging 
 ```bash
@@ -522,8 +522,8 @@ terraform destroy --auto-approve
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
-### If you liked the article, I would be happy if you click on the [Medium Following](https://cmakkaya.medium.com/) button to encourage me to write and not miss future articles.
-### Your clap, follow, or subscribe, they help my articles to reach the broader audience. Thank you in advance for them.
+### If you liked the article, I would be happy if you clicked on the [Medium Following](https://cmakkaya.medium.com/) button to encourage me to write and not miss future articles.
+### Your clap, follow, or subscribe, they help my articles to reach a broader audience. Thank you in advance for them.
 ### For more info and questions, don't hesitate to get in touch with me on [Linkedin](https://www.linkedin.com/in/cumhurakkaya/) or [Medium](https://cmakkaya.medium.com/).
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
