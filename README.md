@@ -189,7 +189,7 @@ terraform apply -auto-approve
 ## 1.2. Deploying a Kubernetes cluster in AWS using EKS (Elastic Kubernetes Service) in the private subnet.
 
 ### 1.2.1. Firstly, create a role for Amazon EKS:
-* Kubernetes clusters managed by Amazon EKS use this role to manage nodes and the legacy Cloud Provider uses this role to create load balancers with Elastic Load Balancing for services. Before you can create Amazon EKS clusters, you must create an IAM role with either of the following IAM policies.
+* Kubernetes clusters managed by Amazon EKS use this role to manage nodes and the legacy Cloud Provider uses this role to create load balancers with Elastic Load Balancing for services. Before you create Amazon EKS clusters, you must create an IAM role with either of the following IAM policies.
 * For a more detailed explanation, you can review [this documantation's link.](https://docs.aws.amazon.com/eks/latest/userguide/service_IAM_role.html)
 ![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/b697a4f9-680c-4da0-a36b-c4fe6b650c25)
 ![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/372f6762-b2f6-4221-b6b4-b59b422e1b31)
