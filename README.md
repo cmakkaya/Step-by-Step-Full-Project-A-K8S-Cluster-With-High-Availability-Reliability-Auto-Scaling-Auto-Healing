@@ -4,7 +4,7 @@
 ------------------------------------------
 # Step by Step Full DevOps Project: A Kubernetes Cluster With High Availability, Reliability, Auto Scaling, Auto-Healing, and Monitoring.
 
-## Creating a Kubernetes Cluster with High Availability, Reliability, Auto Scaling, Auto-Healing, and Monitoring on The Amazon EKS via Terrafom or Cloudformation. In order to do these, we'll use GitOps Workflow (ArgoCD), Jenkins, Rancher, Amazon Elastic Kubernetes Service (EKS), VPC (with both public and private subnets) for Amazon EKS, RDS MySQL Database, AWS Secrets Manager, Amazon Route53, AWS Certificate Manager, Let's Encrypt-Cert Manager, CloudWatch, Prometheus and Grafana. We will do these practically step by step in this Readme.
+## Creating a Kubernetes Cluster with High Availability, Reliability, Auto Scaling, Auto-Healing, and Monitoring on The Amazon EKS via Terrafom or Cloudformation. In order to do these, we'll use GitOps Workflow (ArgoCD), Jenkins, Rancher, Amazon Elastic Kubernetes Service (EKS), VPC (with both public and private subnets) for Amazon EKS, Amazon RDS MySQL Database, S3 Bucket, Amazon ECR, AWS Secrets Manager, Amazon Route53, AWS Certificate Manager, Let's Encrypt-Cert Manager, CloudWatch, Prometheus and Grafana. We will do these practically step by step in this Readme.
 
 # Index of Steps
 ![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/d37e96c8-27d3-4d30-a3d4-caa4a0c0abd8)
