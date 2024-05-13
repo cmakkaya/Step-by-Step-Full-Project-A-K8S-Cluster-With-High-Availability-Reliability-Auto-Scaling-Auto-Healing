@@ -173,7 +173,7 @@ Setting up alerts for critical events or performance thresholds.
 ![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/9dbdea99-c535-42e6-89ea-a1424f17965b)
 
 Or
-Also, If you want, we can create a VPC for EKS with AWS Cloudformation using "Cloudformation's Amazon S3 URL to create VPC for Amazon EKS (AWS CloudFormation template)" instead of using "Cloudformation yaml installation file".
+Also, If you want, you can create a VPC for EKS with AWS Cloudformation using "Cloudformation's Amazon S3 URL to create VPC for Amazon EKS (AWS CloudFormation template)" instead of using "Cloudformation yaml installation file".
 We can create a VPC that supports only IPv4, or a VPC that supports IPv4 and IPv6. To do this, paste one of the following URLs into the text area under "Amazon S3 URL" and choose "Next", as shown in the pictures below.
 
 ```bash
