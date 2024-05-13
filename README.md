@@ -171,12 +171,6 @@ Setting up alerts for critical events or performance thresholds.
 ![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/bab0a3f5-f72e-4cf5-93ab-6747871e18d0)
 ![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/9dbdea99-c535-42e6-89ea-a1424f17965b)
 
-
-### 1.1.2. Creating VPC for Amazon Elastic Kubernetes Service (EKS) by Using Terraform
-* The terraform-vpc installation's `.tf files` are available in this GitHub repo. The files that create the Amazon EKS cluster also create a VPC for Amazon EKS.
-* For a more detailed explanation, you can review [this documantation's link.](https://developer.hashicorp.com/terraform/tutorials/aws-get-started) 
-![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/81b61e97-ceed-415e-91ef-8ff4856ea50e)
-
 Or
 Also, If you want, we can create a VPC for EKS with AWS Cloudformation using "Cloudformation's Amazon S3 URL to create VPC for Amazon EKS (AWS CloudFormation template)" instead of using "Cloudformation yaml installation file".
 We can create a VPC that supports only IPv4, or a VPC that supports IPv4 and IPv6. To do this, paste one of the following URLs into the text area under "Amazon S3 URL" and choose "Next", as shown in the pictures below.
@@ -194,6 +188,11 @@ https://s3.us-west-2.amazonaws.com/amazon-eks/cloudformation/2020-10-29/amazon-e
 
 ![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/87654fe8-b725-47dc-8db6-84f87324e7d0)
 
+
+### 1.1.2. Creating VPC for Amazon Elastic Kubernetes Service (EKS) by Using Terraform
+* The terraform-vpc installation's `.tf files` are available in this GitHub repo. The files that create the Amazon EKS cluster also create a VPC for Amazon EKS.
+* For a more detailed explanation, you can review [this documantation's link.](https://developer.hashicorp.com/terraform/tutorials/aws-get-started) 
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/81b61e97-ceed-415e-91ef-8ff4856ea50e)
 
 ####  Goto "terraform-eks-and-vpc" folder and run the following commands:
 ```bash
