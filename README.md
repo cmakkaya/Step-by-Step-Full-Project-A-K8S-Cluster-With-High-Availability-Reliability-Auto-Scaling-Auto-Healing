@@ -177,6 +177,24 @@ Setting up alerts for critical events or performance thresholds.
 * For a more detailed explanation, you can review [this documantation's link.](https://developer.hashicorp.com/terraform/tutorials/aws-get-started) 
 ![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/81b61e97-ceed-415e-91ef-8ff4856ea50e)
 
+Or
+Also, If you want, we can create a VPC for EKS with AWS Cloudformation using "Cloudformation's Amazon S3 URL to create VPC for Amazon EKS (AWS CloudFormation template)" instead of using "Cloudformation yaml installation file".
+We can create a VPC that supports only IPv4, or a VPC that supports IPv4 and IPv6. To do this, paste one of the following URLs into the text area under "Amazon S3 URL" and choose "Next", as shown in the pictures below.
+
+```bash
+for IPv4:
+https://s3.us-west-2.amazonaws.com/amazon-eks/cloudformation/2020-10-29/amazon-eks-vpc-private-subnets.yaml
+
+for IPv4 and IPv6:
+https://s3.us-west-2.amazonaws.com/amazon-eks/cloudformation/2020-10-29/amazon-eks-ipv6-vpc-public-private-subnets.yaml
+```
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/8a82f390-5566-4624-93d5-f7536a1bbe66)
+
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/8cbf048a-03b7-4539-93d8-410ace3b52af)
+
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/87654fe8-b725-47dc-8db6-84f87324e7d0)
+
+
 ####  Goto "terraform-eks-and-vpc" folder and run the following commands:
 ```bash
 terraform init
