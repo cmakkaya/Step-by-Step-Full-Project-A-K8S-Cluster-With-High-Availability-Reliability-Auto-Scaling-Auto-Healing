@@ -175,7 +175,7 @@ Setting up alerts for critical events or performance thresholds.
 ### 1.1.2. Creating VPC for Amazon Elastic Kubernetes Service (EKS) by Using Terraform
 * The terraform-vpc installation's `.tf files` are available in this GitHub repo. The files that create the Amazon EKS cluster also create a VPC for Amazon EKS.
 * For a more detailed explanation, you can review [this documantation's link.](https://developer.hashicorp.com/terraform/tutorials/aws-get-started) 
-![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/6bac234b-bc63-4666-a1c3-435385e348e3)
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/9a03cb5b-65fc-449f-81b6-df2d1bf51b86)
 
 ####  Goto "terraform-eks-and-vpc" folder and run the following commands:
 ```bash
