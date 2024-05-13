@@ -225,6 +225,8 @@ and
 ```bash
 terraform init
 ```
+![image](https://github.com/cmakkaya/Step-by-Step-Full-Project-A-K8S-Cluster-With-High-Availability-Reliability-Auto-Scaling-Auto-Healing/assets/110052470/8a2e5ca2-8d31-4c16-bc42-0caca913b688)
+
 ####  Apply the infrastructure:
 ```bash
 terraform apply -var="cluster_name=eks-cumhur-cluster" -auto-approve
